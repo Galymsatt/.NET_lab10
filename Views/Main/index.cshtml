@@ -1,0 +1,49 @@
+﻿@using Microsoft.AspNetCore.Razor.Language
+
+<div class="col">
+<div class="form-group">
+    @* <form method="post" action="~/Hello/Index"> *@
+    @using (Html.BeginForm("Index", "Main", FormMethod.Post))
+    {
+        <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input type="text" name="name"/>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputDate">Birthday (dd.mm.yyyy)</label>
+            <input type="text" name="data"/>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputGroup">Group number(1,2,3)</label>
+            <input type="text" name="group"/>
+        </div>
+
+        <div class="row">
+            <button type="submit" class="btn btn-primary mr-4">Get ID</button>
+            <h6>Your ID is :@ViewBag.Message</h6>
+        </div>
+        <hr>
+    }
+     @* </form> *@
+
+</div>
+    
+
+    <br>
+    <div class="form-group">
+        <h5>Search by id</h5>
+        @* <form method="post" action="~/Hello/ShowMessage"> *@
+        <form method="post" action="resultres">
+            <div class="form-group">
+                <label for="exampleInputId">Enter your ID </label>
+                <input type="text" name="id" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Get by ID</button>
+        </form>
+        <br>
+    </div>
+
+</div>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hello from view</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Lab10</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/say/">Search by id <span class="sr-only">(current)</span></a>
+                    </li>         
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+   <div class="form-group">
+       <form>
+           <div class="form-group">
+               <label for="exampleInputName">Name: @ViewBag.Message</label>
+           </div>
+   
+           <div class="form-group">
+               <label for="exampleInputDate">Date of birth: @ViewBag.Message2</label>
+               <input type="text" name="data" />
+           </div>
+   
+           <div class="form-group">
+               <label for="exampleInputGroup">Group number: @ViewBag.Message3</label>
+               <input type="text" name="group" />
+           </div>
+         
+   
+          
+           <br>
+           <hr>
+   
+           <br>
+       </form>
+       </div>
+</body>
+</html>
+
